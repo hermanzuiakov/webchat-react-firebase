@@ -1,10 +1,11 @@
 import React from 'react';
+import Sidebar from "../Sidebar/Sidebar";
 
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+        <main className={"w-full h-screen"}>
+            <Sidebar />
+        </main>
     );
 };
 
