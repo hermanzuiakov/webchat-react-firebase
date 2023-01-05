@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ChatButton = ({photoUrl, name}) => {
+const ChatButton = ({photoUrl, name, message}) => {
     return (
         <button
-            className="flex flex-row items-center hover:bg-gray-600 rounded-xl p-2"
+            className="flex flex-row items-center hover:bg-gray-600 rounded-xl p-2 gap-3"
         >
             <div
-                className="flex items-center justify-center h-8 w-8 bg-indigo-200 rounded-full"
+                className="flex items-center justify-center h-12 w-12 bg-indigo-200 rounded-full"
             >
                 <img
                     src={photoUrl}
@@ -14,7 +14,11 @@ const ChatButton = ({photoUrl, name}) => {
                     className="h-full w-full rounded-full"
                 />
             </div>
-            <div className="ml-2 text-sm font-semibold">{name}</div>
+            <div className="flex flex-col items-start gap-1">
+                <div className="text-sm font-semibold">{name}</div>
+
+                <div className="text-sm font-light">{message}</div>
+            </div>
         </button>
     );
 };

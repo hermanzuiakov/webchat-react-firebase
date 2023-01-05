@@ -1,8 +1,8 @@
 import React from 'react';
-import Headline from "../Elements/Titles/Headline";
-import ChatButton from "../Elements/Buttons/ChatButton";
-import SearchForm from "../Elements/FormElements/SearchForm";
-import User from "../Elements/User/User";
+import Headline from "../../Elements/Titles/Headline";
+import ChatButton from "../../Elements/Buttons/ChatButton";
+import SearchForm from "../../Elements/FormElements/SearchForm";
+import User from "../../Elements/User/User";
 
 const Sidebar = () => {
     return (
@@ -17,7 +17,7 @@ const Sidebar = () => {
 
             <div className="flex flex-col">
                 <div className="flex flex-col space-y-1 mt-4 -mx-2 overflow-y-auto">
-                    <ChatButton name={"Henry Ford"} photoUrl={"https://cdn-icons-png.flaticon.com/512/1/1247.png"}/>
+                    <ChatButton name={"Henry Ford"} photoUrl={"https://cdn-icons-png.flaticon.com/512/1/1247.png"} message={"Hello"}/>
                 </div>
             </div>
         </div>
