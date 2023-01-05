@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "../Links/Link";
 
 const User = ({photoUrl, name}) => {
     return (
@@ -12,7 +13,10 @@ const User = ({photoUrl, name}) => {
                     className="h-full w-full"
                 />
             </div>
-            <div className="text-sm font-semibold">{name}</div>
+            <div className="text-sm font-semibold flex flex-col gap-0.5">
+                {name}
+                <Link linkText={"Logout"} linkUrl={"/"}/>
+            </div>
         </div>
     );
 };
