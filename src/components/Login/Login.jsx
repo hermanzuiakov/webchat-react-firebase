@@ -5,6 +5,7 @@ import MainButton from "../Elements/Buttons/MainButton";
 import Link from "../Elements/Links/Link";
 import SocialButton from "../Elements/Buttons/SocialButton";
 import {FaFacebookF, FaGoogle, FaTwitter} from "react-icons/fa";
+import {REGISTER_ROUTE} from "../../utils/consts";
 
 const Login = () => {
     return (
@@ -45,7 +46,7 @@ const Login = () => {
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Don't have account yet?
 
-                            <Link linkUrl={"/"} linkText={"Register here"} linkClasses={"ml-1"} />
+                            <Link to={REGISTER_ROUTE} linkUrl={"/login"} linkText={"Register here"} linkClasses={"ml-1"} />
                         </p>
                     </form>
                 </div>

@@ -7,6 +7,7 @@ import Link from "../Elements/Links/Link";
 import SocialButton from "../Elements/Buttons/SocialButton";
 import {FaFacebookF, FaGoogle, FaTwitter} from "react-icons/fa";
 import AvatarUpload from "../Elements/FormElements/AvatarUpload";
+import {LOGIN_ROUTE} from "../../utils/consts";
 
 const Register = () => {
     return (
@@ -53,7 +54,7 @@ const Register = () => {
                         <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                             Already have an account?
 
-                            <Link linkUrl={"/"} linkText={"Login here"} linkClasses={"ml-1"} />
+                            <Link linkUrl={LOGIN_ROUTE} linkText={"Login here"} linkClasses={"ml-1"} />
                         </p>
                     </form>
                 </div>

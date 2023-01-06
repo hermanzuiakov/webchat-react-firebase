@@ -1,13 +1,12 @@
 import './App.css';
-import Register from "./components/Register/Register";
-import Login from "./components/Login/Login";
-import Home from "./components/Home/Home";
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 

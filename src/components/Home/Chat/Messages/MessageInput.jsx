@@ -6,14 +6,13 @@ import {GrAttachment} from "react-icons/gr";
 const MessageInput = () => {
     return (
         <div
-            className="flex gap-4 flex-row items-center h-16 rounded-xl w-full px-4 bg-gray-700"
+            className="flex gap-4 flex-row items-center h-16 rounded-xl w-full px-4 bg-gray-700 relative"
         >
-            <div>
-                <button
-                    className="flex items-center justify-center text-gray-400 hover:text-gray-600"
-                >
-                    <GrAttachment />
-                </button>
+            <div className={"cursor-pointer"}>
+                <label htmlFor="attachFile" className={"flex items-center justify-center text-gray-400 hover:text-gray-100"}>
+                    <GrAttachment className={"text-gray-400"}/>
+                </label>
+                <input type="file" className={"absolute left-0 top-3 h-15 w-10 opacity-0 visibility-hidden"} id={"attachFile"}/>
             </div>
             <div className="flex-grow">
                 <div className="relative w-full">
@@ -22,7 +21,7 @@ const MessageInput = () => {
                         className="flex w-full border border-gray-600 rounded-xl focus:outline-none focus:border-indigo-300 pl-4 h-10 bg-gray-700"
                     />
                     <button
-                        className="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-600"
+                        className="absolute flex items-center justify-center h-full w-12 right-0 top-0 text-gray-400 hover:text-gray-100"
                     >
                         <BsEmojiLaughing />
                     </button>
